@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.consumoapi.screens.CepScreen
 import com.example.consumoapi.ui.theme.ConsumoAPITheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ConsumoAPITheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    
+                    CepScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
